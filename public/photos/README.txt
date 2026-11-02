@@ -1,8 +1,9 @@
-5 ảnh cần chèn:
-01-nguyen-lieu-dung-cu.jpg
-02-qua-trinh-thuc-hanh.jpg
-03-hon-hop-sau-nhu-hoa.jpg
-04-xa-phong-sau-tao-hinh.jpg
-05-thanh-pham-hoan-chinh.jpg
+THAY 4 ẢNH GIỮ CHỖ BẰNG ẢNH THỰC TẾ CỦA NHÓM
 
-Đặt ảnh thật tại thư mục này. Trong slides.md, thay nội dung placeholder của từng khung bằng thẻ img có src tương ứng /photos/ten-anh.jpg.
+Đặt ảnh gốc vào thư mục public/photos/ và dùng đúng các tên sau:
+01-nguyen-lieu-dung-cu.jpg       Ảnh nguyên liệu và dụng cụ
+02-hon-hop-sau-nhu-hoa.jpg       Hỗn hợp sau khi nhũ hóa
+03-xa-phong-sau-tao-hinh.jpg     Xà phòng sau khi tạo hình
+04-thanh-pham-hoan-chinh.jpg    Thành phẩm hoàn chỉnh
+
+Khuyến nghị: ảnh ngang, độ phân giải tối thiểu 1600 x 900 px. PhotoFrame dùng object-fit: contain để không cắt mất chi tiết ảnh. Có thể đổi đuôi và tên tệp nhưng cần sửa src tương ứng trong slides.md.

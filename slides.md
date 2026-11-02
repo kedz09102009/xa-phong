@@ -1,206 +1,326 @@
 ---
 theme: seriph
-title: Báo cáo thực hành Hóa học – Điều chế xà phòng handmade
-info: Từ dầu dừa đến sản phẩm làm sạch
-class: kawaii-deck
-highlighter: shiki
-transition: slide-left
+title: Báo cáo thực hành điều chế xà phòng handmade
+description: Từ dầu dừa đến sản phẩm xà phòng qua phản ứng xà phòng hóa
 colorSchema: light
-fonts:
-  sans: Nunito
-  serif: Nunito
+transition: fade
+mdc: true
 ---
 
-<div class="k-slide cover">
-  <div class="corner corner-tl"></div><div class="corner corner-br"></div>
-  <div class="cover-top"><span class="mini-flask">⚗</span><span>BÁO CÁO THỰC HÀNH HÓA HỌC</span><span class="spark">✦</span></div>
-  <div class="cover-grid">
-    <div class="cover-copy">
-      <div class="eyebrow">TỪ DẦU DỪA ĐẾN SẢN PHẨM LÀM SẠCH</div>
-      <h1 class="cover-title"><span>Điều chế</span><strong>xà phòng</strong><em>handmade</em></h1>
-      <div class="doodle-line"></div>
-      <p class="cover-sub">Khám phá phản ứng xà phòng hóa qua thực hành</p>
-      <div class="cover-tags"><span>NHÓM: [TÊN NHÓM]</span><span>LỚP: [LỚP]</span></div>
+<script setup>
+import PhotoFrame from './components/PhotoFrame.vue'
+import FullscreenVideo from './components/FullscreenVideo.vue'
+const assetBase = import.meta.env.BASE_URL
+</script>
+
+<div class="cover report-cover dreamy-cover">
+  <div class="cover-copy">
+    <div class="eyebrow">BÁO CÁO THỰC HÀNH HÓA HỌC</div>
+    <h1>ĐIỀU CHẾ<br/><span>XÀ PHÒNG HANDMADE</span></h1>
+    <p class="cover-subtitle">Từ dầu dừa đến sản phẩm làm sạch</p>
+    <div class="cover-rule"></div>
+    <p class="cover-meta">TỔ: 1 <span>·</span> LỚP: 12A1</p>
+  </div>
+  <div class="cover-visual">
+    <img class="cover-mascot" :src="assetBase + 'stickers/mascot-soap.svg'" alt="Nhân vật Soap" />
+    <div class="soap-stack">
+      <div class="soap-bar bar-back"></div>
+      <div class="soap-bar bar-mid"></div>
+      <div class="soap-bar bar-front"><span>HANDMADE</span></div>
     </div>
-    <div class="cover-hero">
-      <span class="bubble b1"></span><span class="bubble b2"></span><span class="bubble b3"></span>
-      <span class="star s1">✦</span><span class="star s2">✧</span>
-      <img src="/stickers/mascot-soap.svg" class="hero-mascot" alt="Nhân vật xà phòng minh họa" />
-      <img src="/stickers/coconut.svg" class="hero-coconut" alt="Minh họa dầu dừa" />
-      <span class="heart">♡</span>
+    <div class="visual-caption">SẢN PHẨM THỰC TẾ CỦA NHÓM</div>
+    <div class="photo-hint">Có thể thay phần minh họa này bằng ảnh thành phẩm của nhóm.</div>
+  </div>
+</div>
+
+---
+
+# Từ dầu dừa đến xà phòng
+
+<div class="section-lead">Một sản phẩm quen thuộc được tạo ra như thế nào từ phản ứng hóa học?</div>
+
+<div class="question-layout">
+  <div class="question-main">
+    <div class="eyebrow">CÂU HỎI DẪN DẮT</div>
+    <h2>Dầu dừa không phải là xà phòng. Vậy điều gì đã biến đổi?</h2>
+    <p>Trong buổi thực hành, nhóm đã sử dụng dầu dừa và môi trường kiềm để điều chế xà phòng, đồng thời quan sát sự thay đổi của hỗn hợp và sản phẩm thu được.</p>
+  </div>
+  <div class="question-side">
+    <div class="mini-stat"><strong>01</strong><span>Phản ứng hóa học</span></div>
+    <div class="mini-stat"><strong>02</strong><span>Quan sát thực nghiệm</span></div>
+    <div class="mini-stat"><strong>03</strong><span>Đánh giá sản phẩm</span></div>
+  </div>
+</div>
+
+<div class="bottom-note">MẠCH BÁO CÁO: NGUYÊN LÝ → QUÁ TRÌNH → KẾT QUẢ</div>
+
+---
+
+# Mục tiêu thực hành
+
+<div class="section-lead">Nhóm không chỉ tạo ra sản phẩm mà còn vận dụng kiến thức Hóa học để giải thích quá trình.</div>
+
+<div class="card-grid three objective-grid">
+  <div v-click class="info-card accent-card scrapbook-card card-tilt-left">
+    <div class="card-number">01 / HIỂU</div>
+    <div class="card-icon">⚗</div>
+    <h3>Hiểu nguyên lý</h3>
+    <p>Giải thích phản ứng xà phòng hóa và vai trò của các nguyên liệu.</p>
+  </div>
+  <div v-click class="info-card scrapbook-card">
+    <div class="card-number">02 / QUAN SÁT</div>
+    <div class="card-icon">◉</div>
+    <h3>Theo dõi biến đổi</h3>
+    <p>Nhận biết sự thay đổi trạng thái của hỗn hợp và đặc điểm sản phẩm.</p>
+  </div>
+  <div v-click class="info-card scrapbook-card">
+    <div class="card-number">03 / ĐÁNH GIÁ</div>
+    <div class="card-icon">✳</div>
+    <h3>Rút kinh nghiệm</h3>
+    <p>Rèn luyện sự cẩn thận, chính xác, hợp tác và ý thức an toàn.</p>
+  </div>
+</div>
+
+---
+
+# Nguyên liệu & dụng cụ
+
+<div class="section-lead">Thành phần thực tế của nhóm và hình ảnh chuẩn bị trước buổi thực hành.</div>
+
+<div class="materials-evidence-layout">
+  <div class="materials-evidence-copy">
+    <div class="coconut-ingredient scrapbook-note">
+      <img :src="assetBase + 'stickers/coconut.svg'" alt="Minh họa dầu dừa" />
+      <div>
+        <span class="ingredient-kicker">NGUYÊN LIỆU CHÍNH</span>
+        <h2>Dầu dừa</h2>
+        <p>Nguồn chất béo tham gia phản ứng xà phòng hóa.</p>
+      </div>
+    </div>
+    <div class="materials-list materials-list--large">
+      <div v-click class="material-row scrapbook-note"><b>NaOH khan</b><span>Chất base phản ứng</span></div>
+      <div v-click class="material-row scrapbook-note"><b>Nước cất</b><span>Pha dung dịch theo tài liệu thực hành</span></div>
+      <div v-click class="material-row scrapbook-note"><b>Tinh dầu & màu</b><span>Tạo mùi hương và màu sắc</span></div>
+      <div v-click class="material-row scrapbook-note"><b>Khuôn</b><span>Tạo hình bánh xà phòng</span></div>
+      <div v-click class="material-row scrapbook-note"><b>Giấy pH & cân điện tử</b><span>Kiểm tra pH, cân nguyên liệu</span></div>
+      <div v-click class="material-row scrapbook-note"><b>Găng tay, khẩu trang</b><span>Phương tiện bảo hộ thí nghiệm</span></div>
     </div>
   </div>
-  <div class="cover-footer"><span>✧</span> BÁO CÁO NHÓM <span>✧</span></div>
-  <span class="edge-bubble eb1"></span><span class="edge-bubble eb2"></span>
+  <PhotoFrame
+    src="photos/01-nguyen-lieu-dung-cu.jpg"
+    label="ẢNH 01"
+    title="Nguyên liệu & dụng cụ"
+    note="Thay bằng ảnh thực tế của nhóm"
+    orientation="landscape"
+    fit="contain"
+  />
 </div>
+
+<div class="bottom-note">ĐỊNH LƯỢNG ĐƯỢC GIỮ THEO TÀI LIỆU THỰC HÀNH CỦA NHÓM.</div>
 
 ---
 
-<div class="k-slide story">
-  <div class="slide-head"><span class="num-badge">01</span><div><h1>Từ dầu dừa đến xà phòng</h1><p>Một sản phẩm quen thuộc được tạo ra như thế nào?</p></div><span class="head-bubble">○</span></div>
-  <div class="story-grid">
-    <section class="question-panel">
-      <span class="label-pill">CÂU HỎI DẪN DẮT</span>
-      <h2>Dầu dừa không phải là xà phòng. Vậy điều gì đã biến đổi?</h2>
-      <p>Trong buổi thực hành, nhóm tìm hiểu phản ứng xà phòng hóa, theo dõi sự thay đổi của hỗn hợp và quan sát sản phẩm thu được.</p>
-      <div class="path-ribbon"><b>MẠCH BÁO CÁO</b><span>Nguyên lý</span><i>→</i><span>Quá trình</span><i>→</i><span>Kết quả</span></div>
-      <img src="/stickers/mascot-book.svg" class="story-mascot" alt="Nhân vật đang đọc sách" />
-    </section>
-    <section class="story-steps">
-      <div class="spiral">NOTEBOOK</div>
-      <div class="story-step"><b>01</b><span><strong>Phản ứng hóa học</strong><small>Tìm hiểu nguyên lý</small></span></div>
-      <div class="story-step"><b>02</b><span><strong>Quan sát thực nghiệm</strong><small>Theo dõi biến đổi</small></span></div>
-      <div class="story-step"><b>03</b><span><strong>Đánh giá sản phẩm</strong><small>Rút kinh nghiệm</small></span></div>
-      <div class="note-tape">Từ kiến thức đến thực tiễn ✦</div>
-    </section>
+# Cơ sở lý thuyết · Phản ứng xà phòng hóa
+
+<div class="section-lead">Xà phòng hóa là phản ứng thủy phân chất béo trong môi trường kiềm.</div>
+
+<div class="reaction-panel">
+  <div class="eyebrow">PHƯƠNG TRÌNH TỔNG QUÁT</div>
+  <div class="reaction-equation">
+    <span>(RCOO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub></span>
+    <span class="reaction-symbol">+</span>
+    <span>3NaOH</span>
+    <span class="reaction-arrow">→</span>
+    <span>3RCOONa</span>
+    <span class="reaction-symbol">+</span>
+    <span>C<sub>3</sub>H<sub>5</sub>(OH)<sub>3</sub></span>
   </div>
-  <span class="spark-deco sd-a">✦</span><span class="spark-deco sd-b">✧</span>
+  <div class="product-pair">
+    <div><b>Muối natri của axit béo</b><span>Sản phẩm xà phòng</span></div>
+    <div><b>Glycerol</b><span>Sản phẩm đồng tạo thành</span></div>
+  </div>
 </div>
+
+<div class="concept-grid">
+  <div v-click class="concept-item scrapbook-note"><b>Chất béo</b><span>Thành phần phản ứng có trong dầu dừa.</span></div>
+  <div v-click class="concept-item scrapbook-note"><b>Môi trường kiềm</b><span>NaOH tham gia phản ứng thủy phân.</span></div>
+</div>
+
+<div class="bottom-note">R ĐẠI DIỆN CHO GỐC HYDROCARBON CỦA AXIT BÉO.</div>
 
 ---
 
-<div class="k-slide objectives">
-  <div class="slide-head"><span class="num-badge">02</span><div><h1>Mục tiêu thực hành</h1><p>Vận dụng kiến thức Hóa học để giải thích quá trình và đánh giá sản phẩm.</p></div></div>
-  <div class="objective-cards">
-    <article class="objective-card yellow-card"><div class="card-top"><span class="card-icon flask-icon">⚗</span><span class="tiny-index">01 · HIỂU</span></div><h2>Hiểu nguyên lý</h2><p>Giải thích phản ứng xà phòng hóa và vai trò của các nguyên liệu.</p><div class="card-doodle">✧</div></article>
-    <article class="objective-card blue-card"><div class="card-top"><span class="card-icon">⌕</span><span class="tiny-index">02 · QUAN SÁT</span></div><h2>Theo dõi biến đổi</h2><p>Thực hiện và quan sát sự thay đổi của hỗn hợp trong quá trình thực hành.</p><div class="card-doodle">○</div></article>
-    <article class="objective-card pink-card"><div class="card-top"><span class="card-icon">☑</span><span class="tiny-index">03 · ĐÁNH GIÁ</span></div><h2>Rút kinh nghiệm</h2><p>Rèn luyện tính cẩn thận, chính xác, hợp tác và ý thức an toàn.</p><div class="card-doodle">✦</div></article>
-  </div>
-  <div class="goal-strip"><span class="goal-star">✦</span><b>MỤC TIÊU CUỐI CÙNG</b><span>Tạo xà phòng handmade từ dầu dừa và vận dụng kiến thức Hóa học vào thực tiễn.</span></div>
-  <img src="/stickers/flask.svg" class="objective-sticker" alt="Bình thí nghiệm" />
-</div>
+# Vì sao xà phòng có thể làm sạch?
 
----
+<div class="section-lead">Muối natri của axit béo có hai phần với tính chất khác nhau.</div>
 
-<div class="k-slide materials">
-  <div class="slide-head"><span class="num-badge">03</span><div><h1>Nguyên liệu & dụng cụ</h1><p>Những thành phần và dụng cụ cần có trong buổi thực hành.</p></div></div>
-  <div class="materials-grid">
-    <section class="ingredient-feature">
-      <div class="feature-label">NGUYÊN LIỆU CHÍNH</div>
-      <div class="coconut-art"><img src="/stickers/coconut.svg" alt="Dầu dừa và quả dừa" /></div>
-      <h2>Dầu dừa</h2><div class="amount-chip">200 g</div>
-      <p>Nguồn chất béo tham gia phản ứng xà phòng hóa.</p>
-      <div class="feature-bottom">SAP: 257</div>
-    </section>
-    <section class="materials-list">
-      <div class="material-line"><span class="material-symbol">⚗</span><div><b>NaOH khan</b><small>34,9 g · Chất base phản ứng</small></div></div>
-      <div class="material-line"><span class="material-symbol">💧</span><div><b>Nước cất</b><small>70,8 g · Pha dung dịch theo tài liệu</small></div></div>
-      <div class="material-line"><span class="material-symbol">✿</span><div><b>Tinh dầu & màu</b><small>Tạo mùi hương và màu sắc</small></div></div>
-      <div class="material-line"><span class="material-symbol">▱</span><div><b>Khuôn</b><small>Tạo hình bánh xà phòng</small></div></div>
-      <div class="material-line"><span class="material-symbol">▤</span><div><b>Giấy pH & cân điện tử</b><small>Kiểm tra pH theo báo cáo, cân nguyên liệu</small></div></div>
-      <div class="material-line"><span class="material-symbol">♡</span><div><b>Găng tay, khẩu trang</b><small>Phương tiện bảo hộ thí nghiệm</small></div></div>
-    </section>
-  </div>
-  <div class="photo-slot photo-slot-materials"><div class="photo-number">ẢNH 01</div><div class="photo-empty"><span class="camera">▣</span><b>Ảnh nguyên liệu<br/>& dụng cụ</b><small>Thay bằng ảnh thật của nhóm</small></div></div>
-  <div class="materials-footnote">Định lượng được giữ theo tài liệu thực hành của nhóm.</div>
-</div>
-
----
-
-<div class="k-slide theory">
-  <div class="slide-head"><span class="num-badge">04</span><div><h1>Cơ sở lý thuyết · Phản ứng xà phòng hóa</h1><p>Phản ứng thủy phân chất béo trong môi trường kiềm.</p></div></div>
-  <div class="theory-intro"><span class="theory-icon">⚗</span><p>Xà phòng hóa tạo thành <b>glycerol</b> và <b>muối của các axit béo</b>.</p></div>
-  <div class="equation-board"><span class="label-pill">PHƯƠNG TRÌNH TỔNG QUÁT</span><div class="equation-main">(RCOO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub> <span>+</span> 3NaOH <b>→</b> 3RCOONa <span>+</span> C<sub>3</sub>H<sub>5</sub>(OH)<sub>3</sub></div><div class="equation-caption">Chất béo + kiềm → muối natri của axit béo + glycerol</div></div>
-  <div class="theory-products">
-    <div class="theory-product"><div class="product-symbol soap-symbol">✦</div><div><h2>Muối natri của axit béo</h2><p><b>RCOONa</b> · Thành phần xà phòng</p></div></div>
-    <div class="theory-product"><div class="product-symbol glycerol-symbol">◌</div><div><h2>Glycerol</h2><p><b>C₃H₅(OH)₃</b> · Sản phẩm đồng tạo thành</p></div></div>
-  </div>
-  <div class="extra-equation"><b>Phản ứng thêm trong tài liệu:</b>　R’COOH + NaOH → R’COONa + H₂O</div>
-  <img src="/stickers/flask.svg" class="theory-mascot" alt="Bình thí nghiệm" />
-</div>
-
----
-
-<div class="k-slide cleaning">
-  <div class="slide-head"><span class="num-badge">05</span><div><h1>Vì sao xà phòng có thể làm sạch?</h1><p>Muối natri của axit béo có hai phần với tính chất khác nhau.</p></div></div>
-  <div class="molecule-board molecule-board-redesigned">
-    <div class="molecule-toplabels"><span class="tail-label">ĐUÔI KỊ NƯỚC</span><span class="head-label">ĐẦU ƯA NƯỚC</span></div>
-    <img src="/stickers/soap-molecule-v2.svg" class="soap-molecule-svg" alt="Sơ đồ phân tử muối natri của axit béo gồm đuôi hydrocarbon kị nước và đầu carboxylate ưa nước, đi kèm ion natri" />
-    <div class="molecule-caption">Mô hình khái quát của muối natri axit béo (R–COO⁻ Na⁺)</div>
-    <img src="/stickers/mascot-soap.svg" class="molecule-mascot" alt="Nhân vật minh họa" />
-  </div>
-  <div class="cleaning-facts">
-    <div class="fact"><span>✓</span><p><b>Đuôi kị nước:</b> có xu hướng liên kết với dầu mỡ.</p></div>
-    <div class="fact"><span>✓</span><p><b>Đầu ưa nước:</b> tương tác thuận lợi với nước.</p></div>
-    <div class="fact"><span>✓</span><p><b>Micelle:</b> các phân tử xà phòng có thể tập hợp, giúp phân tán dầu mỡ trong nước.</p></div>
-  </div>
-  <div class="cleaning-takeaway">Hai phần có tính chất khác nhau giúp xà phòng hỗ trợ cuốn chất bẩn dầu mỡ ra khỏi bề mặt khi rửa.</div>
-  <span class="soap-bubble sb1"></span><span class="soap-bubble sb2"></span><span class="spark-deco sd-c">✦</span>
-</div>
-
----
-
-<div class="k-slide process">
-  <div class="slide-head"><span class="num-badge">06</span><div><h1>Quy trình thực hành</h1><p>Các giai đoạn chính được ghi nhận trong tài liệu thực hành.</p></div></div>
-  <div class="process-track">
-    <div class="process-card"><span class="process-no">1</span><div class="process-illustration">⚖</div><b>Chuẩn bị</b><small>Nguyên liệu & dụng cụ</small></div><i>→</i>
-    <div class="process-card"><span class="process-no">2</span><div class="process-illustration">⚗</div><b>Pha dung dịch</b><small>Giai đoạn dung dịch kiềm</small></div><i>→</i>
-    <div class="process-card"><span class="process-no">3</span><div class="process-illustration">〰</div><b>Nhũ hóa</b><small>Theo dõi biến đổi hỗn hợp</small></div><i>→</i>
-    <div class="process-card"><span class="process-no">4</span><div class="process-illustration">✿</div><b>Hoàn thiện</b><small>Màu sắc, mùi hương</small></div><i>→</i>
-    <div class="process-card"><span class="process-no">5</span><div class="process-illustration">▱</div><b>Tạo hình</b><small>Đưa vào khuôn</small></div>
-  </div>
-  <div class="process-lower">
-    <div class="observation-note"><span class="note-icon">☼</span><div><b>Điểm quan sát quan trọng</b><p>Hỗn hợp chuyển từ trong sang đục dần, sau đó xuất hiện độ sệt đặc trưng (trace).</p></div></div>
-    <div class="photo-slot process-photo"><div class="photo-number">ẢNH 02</div><div class="photo-empty"><span class="camera">▣</span><b>Ảnh quá trình<br/>thực hành</b><small>Thay bằng ảnh thật của nhóm</small></div></div>
-  </div>
-  <div class="safety-note"><b>NHẮC NHỞ AN TOÀN</b> Thực hành với NaOH phải theo hướng dẫn của giáo viên và quy định an toàn phòng thí nghiệm.</div>
-</div>
-
----
-
-<div class="k-slide observations">
-  <div class="slide-head"><span class="num-badge">07</span><div><h1>Kết quả & quan sát</h1><p>Ba mốc hình ảnh để ghi nhận diễn biến thực tế của nhóm.</p></div></div>
-  <div class="photo-evidence-grid">
-    <div class="evidence-card"><div class="photo-number">ẢNH 03</div><div class="photo-empty large"><span class="camera">▣</span><b>Hỗn hợp sau<br/>khi nhũ hóa</b><small>Chèn ảnh thực tế tại đây</small></div><div class="evidence-caption"><b>Quan sát:</b><span>[Màu sắc, trạng thái, độ sệt]</span></div></div>
-    <div class="evidence-card"><div class="photo-number">ẢNH 04</div><div class="photo-empty large"><span class="camera">▣</span><b>Xà phòng sau<br/>khi tạo hình</b><small>Chèn ảnh thực tế tại đây</small></div><div class="evidence-caption"><b>Quan sát:</b><span>[Hình dạng, trạng thái]</span></div></div>
-    <div class="evidence-card"><div class="photo-number">ẢNH 05</div><div class="photo-empty large"><span class="camera">▣</span><b>Thành phẩm<br/>hoàn chỉnh</b><small>Chèn ảnh thực tế tại đây</small></div><div class="evidence-caption"><b>Quan sát:</b><span>[Màu sắc, mùi hương, đặc điểm]</span></div></div>
-  </div>
-  <div class="observation-bottom"><img src="/stickers/mascot-check.svg" alt="Nhân vật ghi chú"/><b>Chỉ ghi nhận những gì nhóm thực sự quan sát được.</b></div>
-</div>
-
----
-
-<div class="k-slide evaluation">
-  <div class="slide-head"><span class="num-badge">08</span><div><h1>Đánh giá sản phẩm</h1><p>Đối chiếu thành phẩm với các tiêu chí quan sát được.</p></div></div>
-  <div class="evaluation-layout">
-    <div class="soap-showcase"><div class="showcase-spark">✦</div><img src="/stickers/soap-bars.svg" alt="Minh họa bánh xà phòng"/><div class="showcase-caption">SẢN PHẨM CỦA NHÓM</div></div>
-    <div class="evaluation-table-wrap"><table class="evaluation-table"><thead><tr><th>Tiêu chí</th><th>Kết quả</th><th>Nhận xét</th></tr></thead><tbody>
-      <tr><td>Hình dạng</td><td>[Điền]</td><td>[Ghi nhận]</td></tr>
-      <tr><td>Mùi hương</td><td>[Điền]</td><td>[Ghi nhận]</td></tr>
-      <tr><td>Màu sắc</td><td>[Điền]</td><td>[Ghi nhận]</td></tr>
-      <tr><td>pH (giấy pH)</td><td>[Số đo]</td><td>[Đánh giá]</td></tr>
-      <tr><td>Khả năng làm sạch</td><td>[Nếu đã kiểm tra]</td><td>[Ghi nhận]</td></tr>
-    </tbody></table><div class="pH-note"><span>✓</span><p>Chỉ kết luận sản phẩm phù hợp để sử dụng trên da khi đã được kiểm tra và xác nhận an toàn.</p></div></div>
-  </div>
-  <div class="evaluation-sticker">GHI NHẬN TỪ THỰC TẾ ✧</div>
-</div>
-
----
-
-<div class="k-slide lessons">
-  <div class="slide-head"><span class="num-badge">09</span><div><h1>Rút kinh nghiệm</h1><p>Những điều nhóm cần ghi nhớ sau buổi thực hành.</p></div></div>
-  <div class="lesson-layout">
-    <div class="lesson-list">
-      <div class="lesson-row"><span>✓</span><p><b>Cân đo chính xác</b><small>Tuân thủ định lượng đã được giáo viên duyệt.</small></p></div>
-      <div class="lesson-row"><span>✓</span><p><b>Theo dõi quá trình</b><small>Quan sát sự thay đổi của hỗn hợp trong khi thực hành.</small></p></div>
-      <div class="lesson-row"><span>✓</span><p><b>Đảm bảo an toàn</b><small>Sử dụng phương tiện bảo hộ và làm việc theo hướng dẫn.</small></p></div>
-      <div class="lesson-row"><span>✓</span><p><b>Kiên trì và phối hợp</b><small>Phân công nhiệm vụ, hỗ trợ nhau và ghi nhận kết quả.</small></p></div>
+<div class="molecule-layout">
+  <div class="molecule-card">
+    <div class="molecule-drawing">
+      <div class="molecule-tail"><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="molecule-head">COO⁻</div>
     </div>
-    <div class="lesson-art"><div class="idea-bulb">☼</div><img src="/stickers/mascot-book.svg" alt="Nhân vật đang học"/><div class="lesson-sticker">HỌC TỪ THỰC NGHIỆM!</div></div>
+    <div class="molecule-labels"><span>ĐUÔI KỊ NƯỚC</span><span>ĐẦU ƯA NƯỚC</span></div>
   </div>
-  <div class="lesson-quote">“Có kiên trì mới thành công” <span>— Ghi chú vui trong tài liệu của nhóm =))</span></div>
+  <div class="molecule-explain">
+    <div class="explain-row"><b>Đầu ưa nước</b><p>Tương tác thuận lợi với nước.</p></div>
+    <div class="explain-row"><b>Đuôi kị nước</b><p>Có xu hướng liên kết với dầu mỡ.</p></div>
+    <div class="explain-row highlight-explain"><b>Tính lưỡng tính</b><p>Giúp xà phòng hỗ trợ cuốn các chất bẩn dầu mỡ ra khỏi bề mặt khi rửa.</p></div>
+  </div>
+</div>
+
+<div class="micro-note">MỞ RỘNG: CÁC PHÂN TỬ XÀ PHÒNG TẬP HỢP THÀNH MICELLE, GIÚP PHÂN TÁN DẦU MỠ TRONG NƯỚC.</div>
+
+---
+
+# Quy trình thực hành
+
+<div class="section-lead">Năm giai đoạn chính được ghi nhận trong buổi thực hành của nhóm.</div>
+
+<div class="process-five">
+  <div v-click class="process-stage scrapbook-card"><span class="process-number">01</span><div class="process-icon">⚖</div><h3>Chuẩn bị</h3><p>Nguyên liệu & dụng cụ</p></div>
+  <div v-click class="process-stage scrapbook-card"><span class="process-number">02</span><div class="process-icon">⚗</div><h3>Pha dung dịch</h3><p>Giai đoạn dung dịch kiềm</p></div>
+  <div v-click class="process-stage scrapbook-card"><span class="process-number">03</span><div class="process-icon">〰</div><h3>Nhũ hóa</h3><p>Theo dõi biến đổi hỗn hợp</p></div>
+  <div v-click class="process-stage scrapbook-card"><span class="process-number">04</span><div class="process-icon">✿</div><h3>Hoàn thiện</h3><p>Màu sắc, mùi hương</p></div>
+  <div v-click class="process-stage scrapbook-card"><span class="process-number">05</span><div class="process-icon">▱</div><h3>Tạo hình</h3><p>Đưa vào khuôn</p></div>
+</div>
+
+<div class="process-observation scrapbook-note">
+  <span class="process-spark">✦</span>
+  <div><b>Điểm quan sát quan trọng</b><p>Hỗn hợp chuyển từ trong sang đục dần, sau đó xuất hiện độ sệt đặc trưng (trace).</p></div>
+</div>
+<div class="safety-callout"><b>Nhắc nhở an toàn:</b> Thực hành với NaOH phải theo hướng dẫn của giáo viên và quy định an toàn phòng thí nghiệm.</div>
+
+---
+
+# Video quy trình thực hành
+
+<div class="section-lead">Theo dõi video ghi lại quá trình thực hành thực tế của nhóm.</div>
+
+<FullscreenVideo src="videos/quy-trinh-thuc-hanh.mp4" />
+
+<div class="bottom-note">VIDEO GỐC CỦA NHÓM · NHẤN “XEM TOÀN MÀN HÌNH” ĐỂ TRÌNH CHIẾU.</div>
+
+---
+
+# Một số lưu ý
+
+<div class="section-lead">Những điểm cần ghi nhớ trong quá trình thực hành.</div>
+
+<div class="source-notes-grid">
+  <div v-click class="source-note-card scrapbook-note"><div class="source-note-number">01</div><h3>Nhiệt độ</h3><p>Tuân thủ giới hạn chênh lệch nhiệt độ được nêu trong tài liệu thực hành.</p></div>
+  <div v-click class="source-note-card scrapbook-note"><div class="source-note-number">02</div><h3>Trình tự pha</h3><p>Không tự ý thay đổi hoặc đảo ngược trình tự được ghi trong tài liệu.</p></div>
+  <div v-click class="source-note-card scrapbook-note"><div class="source-note-number">03</div><h3>Găng tay</h3><p>Đeo găng tay đầy đủ khi thực hiện với NaOH.</p></div>
+  <div class="source-note-card wide-note"><div class="source-note-number">04</div><h3>Công thức</h3><p>Làm đúng công thức.</p></div>
+  <div class="source-note-card wide-note patience-note"><div class="source-note-number">05</div><h3>Kiên trì</h3><p>Phải kiên trì, có kiên trì mới thành công =))</p></div>
+</div>
+
+<div class="bottom-note source-safety-footnote">CHỈ SỬ DỤNG XÀ PHÒNG TRÊN DA KHI ĐÃ ĐƯỢC KIỂM TRA VÀ ĐẢM BẢO AN TOÀN.</div>
+
+---
+
+# Hỗn hợp sau khi nhũ hóa
+
+<div class="section-lead">Ảnh thực tế ghi nhận trạng thái hỗn hợp sau giai đoạn nhũ hóa.</div>
+
+<div class="photo-detail-layout">
+  <PhotoFrame
+    src="photos/02-hon-hop-sau-nhu-hoa.jpg"
+    label="ẢNH 02"
+    title="Hỗn hợp sau khi nhũ hóa"
+    note="Thay bằng ảnh thực tế của nhóm"
+    orientation="landscape"
+    fit="contain"
+  />
+  <aside class="photo-observation scrapbook-note">
+    <span class="observation-kicker">GHI NHẬN QUAN SÁT</span>
+    <h2>Điều nhóm quan sát được</h2>
+    <ul><li>Màu sắc</li><li>Trạng thái</li><li>Độ sệt</li></ul>
+    <p>Điền nhận xét dựa trên ảnh và quan sát thực tế của nhóm.</p>
+  </aside>
+</div>
+<div class="bottom-note">CHỈ GHI NHẬN NHỮNG GÌ NHÓM THỰC SỰ QUAN SÁT ĐƯỢC.</div>
+
+---
+
+# Xà phòng sau khi tạo hình
+
+<div class="section-lead">Quan sát hình dạng và trạng thái của xà phòng sau khi được đưa vào khuôn.</div>
+
+<div class="photo-detail-layout">
+  <PhotoFrame
+    src="photos/03-xa-phong-sau-tao-hinh.jpg"
+    label="ẢNH 03"
+    title="Xà phòng sau khi tạo hình"
+    note="Thay bằng ảnh thực tế của nhóm"
+    orientation="landscape"
+    fit="contain"
+  />
+  <aside class="photo-observation scrapbook-note">
+    <span class="observation-kicker">GHI NHẬN QUAN SÁT</span>
+    <h2>Đặc điểm sau tạo hình</h2>
+    <ul><li>Hình dạng</li><li>Trạng thái</li></ul>
+    <p>Điền nhận xét dựa trên sản phẩm thực tế của nhóm.</p>
+  </aside>
+</div>
+<div class="bottom-note">ẢNH THỰC TẾ SAU GIAI ĐOẠN TẠO HÌNH.</div>
+
+---
+
+# Thành phẩm hoàn chỉnh
+
+<div class="section-lead">Hình ảnh sản phẩm cuối cùng của nhóm và những đặc điểm được ghi nhận.</div>
+
+<div class="photo-detail-layout photo-detail-layout--final">
+  <PhotoFrame
+    src="photos/04-thanh-pham-hoan-chinh.jpg"
+    label="ẢNH 04"
+    title="Thành phẩm hoàn chỉnh"
+    note="Thay bằng ảnh thực tế của nhóm"
+    orientation="landscape"
+    fit="contain"
+  />
+  <aside class="photo-observation result-observation scrapbook-note">
+    <span class="observation-kicker">GHI NHẬN THỰC TẾ</span>
+    <div class="result-line"><b>Hình dạng</b><span>[Điền theo sản phẩm]</span></div>
+    <div class="result-line"><b>Màu sắc</b><span>[Điền theo sản phẩm]</span></div>
+    <div class="result-line"><b>Mùi hương</b><span>[Điền nếu có]</span></div>
+    <div class="result-line"><b>Trạng thái</b><span>[Điền theo quan sát]</span></div>
+    <div class="result-line"><b>Điểm nổi bật</b><span>[Điều nhóm hài lòng nhất]</span></div>
+  </aside>
+</div>
+<div class="bottom-note">THAY CÁC Ô TRỐNG BẰNG KẾT QUẢ THỰC TẾ CỦA NHÓM.</div>
+
+---
+
+# Đánh giá & ứng dụng
+
+<div class="section-lead">Đánh giá sản phẩm cần dựa trên quan sát và kiểm tra phù hợp, không chỉ dựa vào hình thức.</div>
+
+<div class="evaluation-grid">
+  <div v-click class="evaluation-card scrapbook-card"><b>Kiểm tra pH</b><p>Ghi lại kết quả giấy pH nếu nhóm đã đo. pH không đồng nghĩa với phép đo trực tiếp nồng độ NaOH.</p><span>KẾT QUẢ: [ĐIỀN NẾU ĐÃ ĐO]</span></div>
+  <div v-click class="evaluation-card scrapbook-card"><b>Đánh giá an toàn</b><p>Việc dùng trên da chỉ được cân nhắc sau khi sản phẩm được đánh giá theo hướng dẫn chuyên môn.</p><span>TRẠNG THÁI: [GIÁO VIÊN XÁC NHẬN]</span></div>
+</div>
+
+<div class="application-strip">
+  <div><b>ĐỜI SỐNG</b><span>Sản phẩm làm sạch</span></div>
+  <div><b>SÁNG TẠO</b><span>Thiết kế quà tặng</span></div>
+  <div><b>HỌC TẬP</b><span>Vận dụng Hóa học</span></div>
+  <div><b>PHÁT TRIỂN</b><span>Ý tưởng sản phẩm thủ công</span></div>
 </div>
 
 ---
 
-<div class="k-slide closing">
-  <div class="corner corner-tl"></div><div class="corner corner-br"></div>
-  <span class="closing-spark cs1">✦</span><span class="closing-spark cs2">✧</span><span class="closing-spark cs3">✦</span>
-  <div class="closing-kicker">BÁO CÁO THỰC HÀNH HÓA HỌC</div>
-  <h1>Cảm ơn!</h1>
-  <p>Cảm ơn cô và các bạn<br/>đã lắng nghe báo cáo của nhóm.</p>
-  <div class="closing-line"></div>
-  <div class="closing-team">NHÓM [TÊN NHÓM]　·　LỚP [LỚP]</div>
-  <img src="/stickers/mascot-soap.svg" alt="Nhân vật xà phòng" class="closing-mascot"/>
-  <div class="closing-bubbles"><span></span><span></span><span></span></div>
+<div class="closing-slide final-report dreamy-closing">
+  <img class="closing-mascot" :src="assetBase + 'stickers/mascot-book.svg'" alt="Soap và bạn bè" />
+  <div class="eyebrow">TỔNG KẾT BÁO CÁO THỰC HÀNH</div>
+  <h1>TỪ KIẾN THỨC<br/><span>ĐẾN SẢN PHẨM</span></h1>
+  <div class="closing-takeaways">
+    <div><b>01</b><span>Hiểu phản ứng xà phòng hóa</span></div>
+    <div><b>02</b><span>Quan sát và ghi nhận thực tế</span></div>
+    <div><b>03</b><span>Đề cao an toàn và đánh giá sản phẩm</span></div>
+  </div>
+  <div class="cover-rule"></div>
+  <h2>CẢM ƠN CÔ VÀ CÁC BẠN ĐÃ LẮNG NGHE!</h2>
+  <div class="closing-meta">TỔ 1 <span>✦</span> LỚP 12A1</div>
 </div>
