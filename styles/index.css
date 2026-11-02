@@ -919,12 +919,96 @@
 .slidev-layout .closing-meta { color: #17466d; font-weight: 900; background: #fffdf8; border: 2px dashed #70b9df; border-radius: 999px; padding: .45rem .8rem; display: inline-block; margin-top: .7rem; }
 .slidev-layout .closing-meta span { color: #e5b84f; padding: 0 .4rem; }
 
-/* Dynamic but restrained motion. v-click controls content sequence. */
-.slidev-vclick-target { transition: opacity .42s ease, transform .48s cubic-bezier(.2,.8,.2,1), filter .4s ease; }
-.slidev-vclick-hidden { opacity: 0; transform: translateY(18px) scale(.97); filter: blur(2px); }
-.slidev-vclick-current { opacity: 1; transform: translateY(0) scale(1); filter: none; }
-@keyframes soap-float { 0%,100% { transform: translateY(0) rotate(-2deg); } 50% { transform: translateY(-9px) rotate(2deg); } }
-@keyframes paper-pop { 0% { transform: scale(.94) rotate(-2deg); opacity: 0; } 100% { transform: scale(1) rotate(0); opacity: 1; } }
+/* Automatic, calm motion: no click-to-reveal steps. */
+.slidev-layout .cover-mascot,
+.slidev-layout .closing-mascot {
+  animation: soap-gentle-float 8.8s ease-in-out infinite !important;
+  transform-origin: 50% 55%;
+  will-change: translate;
+}
+
+@keyframes soap-gentle-float {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -3px; }
+}
+
+@keyframes scrapbook-arrive {
+  from { opacity: 0; translate: 0 14px; filter: blur(2px); }
+  to   { opacity: 1; translate: 0 0; filter: blur(0); }
+}
+
+/* Main content reveals itself automatically as the slide appears. */
+.slidev-layout .info-card,
+.slidev-layout .material-row,
+.slidev-layout .concept-item,
+.slidev-layout .process-stage,
+.slidev-layout .source-note-card,
+.slidev-layout .evaluation-card,
+.slidev-layout .mini-stat,
+.slidev-layout .question-main,
+.slidev-layout .reaction-panel,
+.slidev-layout .molecule-card,
+.slidev-layout .explain-row,
+.slidev-layout .application-strip > div,
+.slidev-layout .closing-takeaways > div,
+.slidev-layout .process-observation,
+.slidev-layout .safety-callout,
+.slidev-layout .photo-detail-layout > *,
+.slidev-layout .materials-evidence-layout > *,
+.slidev-layout .coconut-ingredient {
+  animation: scrapbook-arrive .68s cubic-bezier(.2,.75,.25,1) both;
+}
+
+/* Gentle stagger creates a sequence without requiring the presenter to click. */
+.slidev-layout .objective-grid > *:nth-child(1),
+.slidev-layout .materials-list--large > *:nth-child(1),
+.slidev-layout .concept-grid > *:nth-child(1),
+.slidev-layout .process-five > *:nth-child(1),
+.slidev-layout .source-notes-grid > *:nth-child(1),
+.slidev-layout .evaluation-grid > *:nth-child(1),
+.slidev-layout .question-side > *:nth-child(1),
+.slidev-layout .closing-takeaways > *:nth-child(1),
+.slidev-layout .application-strip > *:nth-child(1) { animation-delay: .08s; }
+
+.slidev-layout .objective-grid > *:nth-child(2),
+.slidev-layout .materials-list--large > *:nth-child(2),
+.slidev-layout .concept-grid > *:nth-child(2),
+.slidev-layout .process-five > *:nth-child(2),
+.slidev-layout .source-notes-grid > *:nth-child(2),
+.slidev-layout .evaluation-grid > *:nth-child(2),
+.slidev-layout .question-side > *:nth-child(2),
+.slidev-layout .closing-takeaways > *:nth-child(2),
+.slidev-layout .application-strip > *:nth-child(2) { animation-delay: .17s; }
+
+.slidev-layout .objective-grid > *:nth-child(3),
+.slidev-layout .materials-list--large > *:nth-child(3),
+.slidev-layout .process-five > *:nth-child(3),
+.slidev-layout .source-notes-grid > *:nth-child(3),
+.slidev-layout .closing-takeaways > *:nth-child(3),
+.slidev-layout .application-strip > *:nth-child(3) { animation-delay: .26s; }
+
+.slidev-layout .materials-list--large > *:nth-child(4),
+.slidev-layout .process-five > *:nth-child(4),
+.slidev-layout .source-notes-grid > *:nth-child(4),
+.slidev-layout .application-strip > *:nth-child(4) { animation-delay: .35s; }
+
+.slidev-layout .materials-list--large > *:nth-child(5),
+.slidev-layout .process-five > *:nth-child(5),
+.slidev-layout .source-notes-grid > *:nth-child(5) { animation-delay: .44s; }
+
+.slidev-layout .materials-list--large > *:nth-child(6) { animation-delay: .53s; }
+
+.slidev-layout .report-cover .cover-copy { animation: scrapbook-arrive .8s .08s both; }
+.slidev-layout .report-cover .cover-visual { animation: scrapbook-arrive .85s .2s both; }
+.slidev-layout .closing-slide > .eyebrow,
+.slidev-layout .closing-slide > h1,
+.slidev-layout .closing-slide > .cover-rule,
+.slidev-layout .closing-slide > h2,
+.slidev-layout .closing-slide > .closing-meta { animation: scrapbook-arrive .72s .12s both; }
+.slidev-layout .closing-slide > h1 { animation-delay: .18s; }
+.slidev-layout .closing-slide > h2 { animation-delay: .58s; }
+.slidev-layout .closing-slide > .closing-meta { animation-delay: .68s; }
+
 @media (max-width: 900px) {
   .slidev-layout { padding: 1.2rem 1.35rem; font-size: 1rem; }
   .slidev-layout h1 { font-size: 2.1rem; }
@@ -932,7 +1016,11 @@
   .slidev-layout .report-cover { grid-template-columns: 1fr 1fr; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .slidev-layout *, .slidev-layout *::before, .slidev-layout *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+  .slidev-layout *, .slidev-layout *::before, .slidev-layout *::after {
+    animation: none !important;
+    transition: none !important;
+    translate: none !important;
+  }
 }
 
 /* =========================================================

@@ -61,19 +61,19 @@ const assetBase = import.meta.env.BASE_URL
 <div class="section-lead">Nhóm không chỉ tạo ra sản phẩm mà còn vận dụng kiến thức Hóa học để giải thích quá trình.</div>
 
 <div class="card-grid three objective-grid">
-  <div v-click class="info-card accent-card scrapbook-card card-tilt-left">
+  <div class="info-card accent-card scrapbook-card card-tilt-left">
     <div class="card-number">01 / HIỂU</div>
     <div class="card-icon">⚗</div>
     <h3>Hiểu nguyên lý</h3>
     <p>Giải thích phản ứng xà phòng hóa và vai trò của các nguyên liệu.</p>
   </div>
-  <div v-click class="info-card scrapbook-card">
+  <div class="info-card scrapbook-card">
     <div class="card-number">02 / QUAN SÁT</div>
     <div class="card-icon">◉</div>
     <h3>Theo dõi biến đổi</h3>
     <p>Nhận biết sự thay đổi trạng thái của hỗn hợp và đặc điểm sản phẩm.</p>
   </div>
-  <div v-click class="info-card scrapbook-card">
+  <div class="info-card scrapbook-card">
     <div class="card-number">03 / ĐÁNH GIÁ</div>
     <div class="card-icon">✳</div>
     <h3>Rút kinh nghiệm</h3>
@@ -98,12 +98,12 @@ const assetBase = import.meta.env.BASE_URL
       </div>
     </div>
     <div class="materials-list materials-list--large">
-      <div v-click class="material-row scrapbook-note"><b>NaOH khan</b><span>Chất base phản ứng</span></div>
-      <div v-click class="material-row scrapbook-note"><b>Nước cất</b><span>Pha dung dịch theo tài liệu thực hành</span></div>
-      <div v-click class="material-row scrapbook-note"><b>Tinh dầu & màu</b><span>Tạo mùi hương và màu sắc</span></div>
-      <div v-click class="material-row scrapbook-note"><b>Khuôn</b><span>Tạo hình bánh xà phòng</span></div>
-      <div v-click class="material-row scrapbook-note"><b>Giấy pH & cân điện tử</b><span>Kiểm tra pH, cân nguyên liệu</span></div>
-      <div v-click class="material-row scrapbook-note"><b>Găng tay, khẩu trang</b><span>Phương tiện bảo hộ thí nghiệm</span></div>
+      <div class="material-row scrapbook-note"><b>NaOH khan</b><span>Chất base phản ứng</span></div>
+      <div class="material-row scrapbook-note"><b>Nước cất</b><span>Pha dung dịch theo tài liệu thực hành</span></div>
+      <div class="material-row scrapbook-note"><b>Tinh dầu & màu</b><span>Tạo mùi hương và màu sắc</span></div>
+      <div class="material-row scrapbook-note"><b>Khuôn</b><span>Tạo hình bánh xà phòng</span></div>
+      <div class="material-row scrapbook-note"><b>Giấy pH & cân điện tử</b><span>Kiểm tra pH, cân nguyên liệu</span></div>
+      <div class="material-row scrapbook-note"><b>Găng tay, khẩu trang</b><span>Phương tiện bảo hộ thí nghiệm</span></div>
     </div>
   </div>
   <PhotoFrame
@@ -142,8 +142,8 @@ const assetBase = import.meta.env.BASE_URL
 </div>
 
 <div class="concept-grid">
-  <div v-click class="concept-item scrapbook-note"><b>Chất béo</b><span>Thành phần phản ứng có trong dầu dừa.</span></div>
-  <div v-click class="concept-item scrapbook-note"><b>Môi trường kiềm</b><span>NaOH tham gia phản ứng thủy phân.</span></div>
+  <div class="concept-item scrapbook-note"><b>Chất béo</b><span>Thành phần phản ứng có trong dầu dừa.</span></div>
+  <div class="concept-item scrapbook-note"><b>Môi trường kiềm</b><span>NaOH tham gia phản ứng thủy phân.</span></div>
 </div>
 
 <div class="bottom-note">R ĐẠI DIỆN CHO GỐC HYDROCARBON CỦA AXIT BÉO.</div>
@@ -178,11 +178,11 @@ const assetBase = import.meta.env.BASE_URL
 <div class="section-lead">Năm giai đoạn chính được ghi nhận trong buổi thực hành của nhóm.</div>
 
 <div class="process-five">
-  <div v-click class="process-stage scrapbook-card"><span class="process-number">01</span><div class="process-icon">⚖</div><h3>Chuẩn bị</h3><p>Nguyên liệu & dụng cụ</p></div>
-  <div v-click class="process-stage scrapbook-card"><span class="process-number">02</span><div class="process-icon">⚗</div><h3>Pha dung dịch</h3><p>Giai đoạn dung dịch kiềm</p></div>
-  <div v-click class="process-stage scrapbook-card"><span class="process-number">03</span><div class="process-icon">〰</div><h3>Nhũ hóa</h3><p>Theo dõi biến đổi hỗn hợp</p></div>
-  <div v-click class="process-stage scrapbook-card"><span class="process-number">04</span><div class="process-icon">✿</div><h3>Hoàn thiện</h3><p>Màu sắc, mùi hương</p></div>
-  <div v-click class="process-stage scrapbook-card"><span class="process-number">05</span><div class="process-icon">▱</div><h3>Tạo hình</h3><p>Đưa vào khuôn</p></div>
+  <div class="process-stage scrapbook-card"><span class="process-number">01</span><div class="process-icon">⚖</div><h3>Chuẩn bị</h3><p>Nguyên liệu & dụng cụ</p></div>
+  <div class="process-stage scrapbook-card"><span class="process-number">02</span><div class="process-icon">⚗</div><h3>Pha dung dịch</h3><p>Giai đoạn dung dịch kiềm</p></div>
+  <div class="process-stage scrapbook-card"><span class="process-number">03</span><div class="process-icon">〰</div><h3>Nhũ hóa</h3><p>Theo dõi biến đổi hỗn hợp</p></div>
+  <div class="process-stage scrapbook-card"><span class="process-number">04</span><div class="process-icon">✿</div><h3>Hoàn thiện</h3><p>Màu sắc, mùi hương</p></div>
+  <div class="process-stage scrapbook-card"><span class="process-number">05</span><div class="process-icon">▱</div><h3>Tạo hình</h3><p>Đưa vào khuôn</p></div>
 </div>
 
 <div class="process-observation scrapbook-note">
@@ -208,9 +208,9 @@ const assetBase = import.meta.env.BASE_URL
 <div class="section-lead">Những điểm cần ghi nhớ trong quá trình thực hành.</div>
 
 <div class="source-notes-grid">
-  <div v-click class="source-note-card scrapbook-note"><div class="source-note-number">01</div><h3>Nhiệt độ</h3><p>Tuân thủ giới hạn chênh lệch nhiệt độ được nêu trong tài liệu thực hành.</p></div>
-  <div v-click class="source-note-card scrapbook-note"><div class="source-note-number">02</div><h3>Trình tự pha</h3><p>Không tự ý thay đổi hoặc đảo ngược trình tự được ghi trong tài liệu.</p></div>
-  <div v-click class="source-note-card scrapbook-note"><div class="source-note-number">03</div><h3>Găng tay</h3><p>Đeo găng tay đầy đủ khi thực hiện với NaOH.</p></div>
+  <div class="source-note-card scrapbook-note"><div class="source-note-number">01</div><h3>Nhiệt độ</h3><p>Tuân thủ giới hạn chênh lệch nhiệt độ được nêu trong tài liệu thực hành.</p></div>
+  <div class="source-note-card scrapbook-note"><div class="source-note-number">02</div><h3>Trình tự pha</h3><p>Không tự ý thay đổi hoặc đảo ngược trình tự được ghi trong tài liệu.</p></div>
+  <div class="source-note-card scrapbook-note"><div class="source-note-number">03</div><h3>Găng tay</h3><p>Đeo găng tay đầy đủ khi thực hiện với NaOH.</p></div>
   <div class="source-note-card wide-note"><div class="source-note-number">04</div><h3>Công thức</h3><p>Làm đúng công thức.</p></div>
   <div class="source-note-card wide-note patience-note"><div class="source-note-number">05</div><h3>Kiên trì</h3><p>Phải kiên trì, có kiên trì mới thành công =))</p></div>
 </div>
@@ -298,8 +298,8 @@ const assetBase = import.meta.env.BASE_URL
 <div class="section-lead">Đánh giá sản phẩm cần dựa trên quan sát và kiểm tra phù hợp, không chỉ dựa vào hình thức.</div>
 
 <div class="evaluation-grid">
-  <div v-click class="evaluation-card scrapbook-card"><b>Kiểm tra pH</b><p>Ghi lại kết quả giấy pH nếu nhóm đã đo. pH không đồng nghĩa với phép đo trực tiếp nồng độ NaOH.</p><span>KẾT QUẢ: [ĐIỀN NẾU ĐÃ ĐO]</span></div>
-  <div v-click class="evaluation-card scrapbook-card"><b>Đánh giá an toàn</b><p>Việc dùng trên da chỉ được cân nhắc sau khi sản phẩm được đánh giá theo hướng dẫn chuyên môn.</p><span>TRẠNG THÁI: [GIÁO VIÊN XÁC NHẬN]</span></div>
+  <div class="evaluation-card scrapbook-card"><b>Kiểm tra pH</b><p>Ghi lại kết quả giấy pH nếu nhóm đã đo. pH không đồng nghĩa với phép đo trực tiếp nồng độ NaOH.</p><span>KẾT QUẢ: [ĐIỀN NẾU ĐÃ ĐO]</span></div>
+  <div class="evaluation-card scrapbook-card"><b>Đánh giá an toàn</b><p>Việc dùng trên da chỉ được cân nhắc sau khi sản phẩm được đánh giá theo hướng dẫn chuyên môn.</p><span>TRẠNG THÁI: [GIÁO VIÊN XÁC NHẬN]</span></div>
 </div>
 
 <div class="application-strip">
